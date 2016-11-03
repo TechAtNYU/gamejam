@@ -1,248 +1,140 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>Game Jam</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body>
-		<img src="images/pacman.gif" id="pacman" class="sprite walk">
-		<img src="images/inky.gif" id="inky" class="sprite walk">
-		<img src="images/pinky.gif" id="pinky" class="sprite walk">
-		<img src="images/blinky.gif" id="blinky" class="sprite walk">
-		<img src="images/clyde.gif" id="clyde" class="sprite walk">
-		<!-- Nav -->
+<!DOCTYPE html> 
+	<head>  
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+		<script src="http://d3js.org/d3.v3.min.js"></script>
+	</head> 
+	<body> 
+
+	    <div id="canvas">  </div> 
+
+		<div id="main"> 
+
+			<!-- Nav -->
 			<nav id="nav">
-				<ul class="container">
-					<li><a href="#what">WHAT</a></li>
-					<li><a href="#participate">PARTICIPATE</a></li>
-					<li><a href="#sponsors">SPONSORS</a></li>
-					<li><a href="#schedule">SCHEDULE</a></li>
-					<li><a href="#contact">WHERE</a></li>
-					<li><a href="#contact">CONTACT</a></li>
-				</ul>
+				<ul class="nav-bar">
+					<li><a  class="halfhover" href="#about">ABOUT</a></li>
+					<li><a  class="halfhover" href="#register">REGISTER</a></li>
+					<li><a  class="halfhover" href="#logistics">LOGISTICS</a></li>
+					<li><a  class="halfhover" href="#workshop">WORKSHOPS</a></li>
+					<li><a  class="halfhover" href="#sponsor">PARTNERS</a></li>
+			    </ul>
 			</nav>
 
-		<!-- WHAT -->
-			<div class="wrapper style1 first">
-				<article class="container" id="what">
-					<div class="row">
-						<div class="4u 12u(mobile)">
-							<img src="images/gameboy.png" alt="" style="width: 70%" />
-						</div>
-						<div class="8u 12u(mobile)">
-							<header>
-								<img src="images/logo.png">
-							</header>
-							<p>
-								This fall, the GameDays initiative of Tech@NYU is hosting a game jam! A game jam is essentially a hackathon, but for game development. GameDays invites 100 students from all over New York City and beyond to explore digital and physical game design, meet new people, express themselves creatively, and bring an idea to fruition! Game Jam will be a day long, lunch and dinner will be served! 
-							</p>
-						</div>
+
+			<section id="about"> 
+			  <div class="content">
+			    <div id="title"> </div>
+			    <p>
+					Tech@NYU is hosting a game jam, a hackathon focused on game development. We are inviting students from all over New York City to explore digital and physical game design, meet new people, express themselves creatively, and bring an idea to fruition! Lunch and dinner will be served at the event. 
+				</p>
+			 </div>
+			</section>
+
+			<!--  REGISTER -->
+			<section id="register">  
+			  <div class="content">
+			  	<h3 class="section-title"> JOIN US </h3> 
+			   	<div class="register register-left">
+			   		<h5> PARTICIPANT </h5>
+			   		<p>  Learn new skills, meet cool people, and make awesome games!</p>
+			   		<div class="wrap">
+					  <a href="https://tnyugamejam.splashthat.com/" target="_blank"> <button class="button">apply</button> </a>
 					</div>
-				</article>
-			</div>
-
-		<!-- WHERE -->
-			<div class="wrapper style2">
-				<article id="participate">
-					<header>
-						<h2>Character Select</h2>
-					</header>
-					<div class="container">
-						<div class="row">
-							<div class="4u 12u(mobile)">
-								<section class="box style1 hvr-grow">
-									<span class="icon featured fa-code-fork"></span>
-									<h3>PARTICIPANT</h3>
-									<p>
-										<strong>STATS</strong><br>
-										 Sign up to learn new skills, meet cool, people and make awesome games!
-										
-									</p>
-									<a class="button" href="https://gamedays.typeform.com/to/GOFqPl" data-mode="2" target="_blank">Apply</a>
-<script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}id=id+'_';if(!gi.call(d,id)){qs=ce.call(d,'link');qs.rel='stylesheet';qs.id=id;qs.href=b+'share-button.css';s=gt.call(d,'head')[0];s.appendChild(qs,s)}})()</script>
-
-								</section>
-							</div>
-							<div class="4u 12u(mobile)">
-								<section class="box style1 hvr-grow" href="https://gamedays.typeform.com/to/j4vIBp" data-mode="2" target="_blank">
-									<span class="icon featured fa-credit-card"></span>
-									<h3>SPONSOR</h3>
-									<p>
-										<strong>STATS</strong><br>
-										Contribute to bring this event to its fullest potential!
-										
-									</p>
-									<a class="button" href="https://gamedays.typeform.com/to/j4vIBp" data-mode="2" target="_blank">Sponsor</a>
-										<script>
-											(function(){
-												var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}id=id+'_';if(!gi.call(d,id)){qs=ce.call(d,'link');qs.rel='stylesheet';qs.id=id;qs.href=b+'share-button.css';s=gt.call(d,'head')[0];s.appendChild(qs,s)}})()
-										</script>
-									
-								</section>
-							</div>
-							<div class="4u 12u(mobile)">
-								<section class="box style1 hvr-grow">
-									<span class="icon featured fa-pencil-square-o"></span>
-									<h3>MENTORS</h3>
-									<p>
-										<strong>STATS</strong><br>
-										Offer your technical expertise and advice to our particpants.
-										
-
-									</p>
-									<a class="button" href="https://gamedays.typeform.com/to/EhAo6K" data-mode="2" target="_blank">Apply</a>
-										<script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}id=id+'_';if(!gi.call(d,id)){qs=ce.call(d,'link');qs.rel='stylesheet';qs.id=id;qs.href=b+'share-button.css';s=gt.call(d,'head')[0];s.appendChild(qs,s)}})()</script>
-								</section>
-							</div>
-						</div>
+			   	</div> 
+			   	<div class="register line-break register-right"> 
+			   		<h5> MENTOR </h5>
+			   		<p>  Offer your technical expertise and advice to our participants. </p>
+			   		<div class="wrap">
+					    <a href="https://tnyugamejam.splashthat.com/" target="_blank"> <button class="button">apply</button> </a>
 					</div>
-				</article>
-			</div>
+			 	</div>
+			</section>
 
-		<!-- Schedule -->
-			<div class="wrapper style3">
-				<article id="schedule">
-					<header>
-						<h2>Schedule</h2>
-					</header>
-					<div class="container">
-						<div class="row">
-							<div class="container">
-    
-							    <ul class="timeline">
-							        <li>
-							          <div class="timeline-badge"><span class="icon fa-thumbs-up"></span></div>
-							          <div class="timeline-panel">
-							          	<div class="timeline-heading">
-							              <h4 class="timeline-title">Check In</h4>
-							            </div>
-							            <div class="timeline-body">
-							              <p>10:30 - 11:00am</p>
-							            </div>
-							          </div>
-							        </li>
-							        <li class="timeline-inverted">
-							          <div class="timeline-badge warning"><span class="icon fa-microphone"></span></div>
-							          <div class="timeline-panel">
-							            <div class="timeline-heading">
-							              <h4 class="timeline-title">Opening Remarks/Keynote</h4>
-							            </div>
-							            <div class="timeline-body">
-							              <p>11:00 - 11:30am</p>
-							            </div>
-							          </div>
-							        </li>
-							        <li>
-							          <div class="timeline-badge danger"><span class="icon fa-cogs"></span></div>
-							          <div class="timeline-panel">
-							            <div class="timeline-heading">
-							              <h4 class="timeline-title">Game Jam begins</h4>
-							            </div>
-							            <div class="timeline-body">
-							              <p>11:30am</p>
-							            </div>
-							          </div>
-							        </li>
-							        <li class="timeline-inverted">
-							          <div class="timeline-badge"><span class="icon fa-spoon"></span></div>
-							          <div class="timeline-panel">
-							            <div class="timeline-heading">
-							              <h4 class="timeline-title">Lunch</h4>
-							            </div>
-							            <div class="timeline-body">
-							              <p>12:00am</p>
-							            </div>
-							          </div>
-							        </li>
+			<!-- SCHEDULE -->
+			<section id="logistics">  
+			  <div class="content">
+			    <h3 class="section-title"> LOGISTICS </h3> 
+			    <div> 
+			    	<table class="info"> 
+			    		 <tr>
+					    	<th colspan="2">Location</th>
+					 	 </tr>
+						  <tr class="center-row"> 
+							<td>Microst Technology Center, 11 Times Square, New York, NY 10036</td>
+						  </tr>
+			    	</table> 
+
+			    	<table class="info"> 
+			    		 <tr>
+					    	<th colspan="2">Contact</th>
+					 	 </tr>
+						  <tr class="center-row"> 
+							<td><a class="email" href="mailto:gamedaystnyu@gmail.com?Subject=Sponsor">gamedaystnyu@gmail.com</td>
+						  </tr>
+			    	</table> 
+
+					<table class="info">
+					  <tr>
+					    <th colspan="2">Schedule</th>
+					  </tr>
+					  <tr> 
+						<td>10:00 am</td>
+					    <td>Check-in</td>
+					  </tr>
+					  <tr>
+					  	<td>10:30 am</td>
+					    <td>Keynote</td>
+					  </tr>
+					  <tr>
+					  	<td>11:00 am </td>
+					    <td>Optional workshops</td>
+					  </tr>
+					  <tr>
+					  	<td>12:30 pm</td>
+					    <td>Lunch</td>
+					  </tr>
+
+					   <tr>
+					  	<td>5:30 pm</td>
+					    <td>Dinner</td>
+					  </tr>
+
+					  <tr>
+					  	<td>7:15 pm</td>
+					    <td>Wrap up</td>
+					  </tr>
+					  <tr>
+					  	<td>7:30 pm</td>
+					    <td>Demos and closing</td>
+					  </tr>
+					</table>
+			    </div> 
+			 </div>
+			</section>
+
+			<!-- WOrkSHOP details -->
+			<section id="workshop">  
+			  <div class="content">
+			   	<h3 class="section-title"> WORKSHOPS </h3> 
+			 </div>
+			</section>
 
 
-							        <li>
-							        	<div class="timeline-badge warning"><span class="icon fa-stop"></span></div>
-							          <div class="timeline-panel">
-							            <div class="timeline-heading">
-							              <h4 class="timeline-title">Wrap up</h4>
-							            </div>
-							            <div class="timeline-body">
-							              <p>6:00pm</p>
-							            </div>
-							          </div>
-							        </li>
-							        <li class="timeline-inverted">
-							          <div class="timeline-badge success"><span class="icon fa-video-camera"></span></div>
-							          <div class="timeline-panel">
-							            <div class="timeline-heading">
-							              <h4 class="timeline-title">Demos and closing</h4>
-							            </div>
-							            <div class="timeline-body">
-							              <p>6:30 - 7:30pm</p>
-							            </div>
-							          </div>
-							        </li>
-							    </ul>
-							</div>
-						</div>
-					</div>
-				</article>
-			</div>
-
-		<!-- Portfolio -->
-			<div class="wrapper style3">
-				<article id="sponsors">
-					<header>
-						<h2>Our Backers!</h2>
-					</header>
-					<div class="container">
-						<div class="row">
-							<div class="4u 12u(mobile)">
-							<a href="techatnyu.org" class="image featured"><img src="images/techatnyu.png" alt="" /></a>
-								
-							</div>
-							<div class="4u 12u(mobile)">
-							<a href="https://www.microsoft.com/en-us/" class="image featured"><img src="images/microsoft.png" alt="" /></a>
-							</div>
-						</div>
-					</div>
-				</article>
-			</div>
-
-		<!-- Contact -->
-			<div class="wrapper style4">
-				<article id="contact" class="container 100%">
-					<div>
-						<div class="row">
-							<div class="8u">
-								<header>
-									<h2>Location and Time</h2>
-									<h6>TBD, from 10am to 9pm</h6>
-									<h6>Microsoft Offices at </h6>
-								</header>
-								<script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:440px;width:700px;'>
-								<div id='gmap_canvas' style='height:440px;width:700px;'></div>
-								<style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:15,center:new google.maps.LatLng(40.7569855,-73.98967089999996),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(40.7569855,-73.98967089999996)});infowindow = new google.maps.InfoWindow({content:'<strong>Microsoft Offices</strong><br>11 Times Square, 7th Floor, New York<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
-							</div>
-							<div class="4u">
-								<header>
-									<h2>Contact Us</h2>
-
-								</header>
-								<h6>Email</h6>
-								gamedaystnyu@gmail.com
-							</div>
-						</div>
-					</div>
-				</article>
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/skel-viewport.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
-
-	</body>
-</html>
+			<!-- SPONSOR -->
+			<section id="sponsor">  
+			  <div class="content">
+			  	    <h3 class="section-title"> PARTNERS </h3> 
+			   		<p> Interested in partnering with us? Email us at <a class="email" href="mailto:gamedaystnyu@gmail.com?Subject=Sponsor"> gamedaystnyu@gmail.com </a> . We'd love to have you. </p>
+			 </div>
+			</section>
+		</div> 
+	</div> 
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/main.js"></script>
+		<script src="assets/p5/p5.min.js"></script> 
+		<script src="assets/p5/p5.play.js"> </script> 
+		<script src="assets/js/sketch.js"> </script> 
+		<script src="assets/js/title.js"></script>
+	</body> 
+</html> 
