@@ -212,3 +212,13 @@ h1 {
   			width:75%;
   		}
 
+.logo {
+  margin-right: 5%;
+  border-radius: 10px;
+}
+.sqr-logo {
+  width: 20%;
+}
+.rect-logo {
+  width: 40%;
+}
