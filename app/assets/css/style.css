@@ -220,5 +220,20 @@ h1 {
   width: 20%;
 }
 .rect-logo {
+  margin:;
   width: 40%;
+}
+#m {
+  margin: 5%;
+    color: #666;
+}
+#m.logo.rect-logo {
+  color: #666;  
+}
+#mic_tm {
+  font-size: 9pt;
+
+}
+#mic_log {
+  margin-right: 0;
 }
