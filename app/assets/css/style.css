@@ -237,3 +237,14 @@ h1 {
 #mic_log {
   margin-right: 0;
 }
+#workshops {
+  width: 100%;
+}
+#workshop {
+  padding-right: 2%;
+  padding-left: 2%;
+}
+.first-row {
+  text-align: center;
+  width: 12%;
+}
